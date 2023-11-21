@@ -5,15 +5,13 @@ n = len(dic.keys())
 _x = 0
 xy = 0
 x_square = 0
+_y = 0
 
 for item in dic.keys():
     _x += item
     xy += item*dic[item]
     x_square += item*item
-
-_y = 0
-for item in dic.values():
-    _y += item
+    _y += dic[item]
 
 _x *= 1/n
 _y *= 1/n
